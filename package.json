@@ -1,0 +1,24 @@
+{
+  "name": "trello-clone",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo build",
+    "start": "turbo run start --parallel",
+    "clean": "rimraf .turbo node_modules",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "^2.10.13"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "version": "11.9.0"
+    }
+  }
+}
